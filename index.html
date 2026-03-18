@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Bismah Farooq, a web developer specializing in responsive websites, user experience, and SEO optimization.">
+  <title>Bismah Farooq | Web Developer Portfolio</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      line-height: 1.6;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    header {
+      background: #e0f2fe;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #0369a1;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      color: #0284c7;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e0f2fe;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h2>BISMAH FAROOQ</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hi, I'm Bismah Farooq</h1>
+
+  <button onclick="scrollToContact()">Contact Me</button>
+
+  <div class="links">
+    <a href="https://github.com/bismah-farooq" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/bismah-farooq-1b6099351/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Detail-oriented Computer Science student and aspiring web developer with hands-on experience building responsive websites using HTML, CSS, and JavaScript. Skilled in creating clean, user-focused designs and optimizing web pages for performance and accessibility. Eager to contribute to real-world projects, continuously improve technical skills, and develop impactful web solutions.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>California State University, Long Beach</h3>
+    <p>Bachelor's Degree in Computer Science (In Progress)</p>
+    <p>Expected Graduation: December 2026</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Escape Room Game (Python – Factory Design Pattern)</h3>
+      <p> Designed an interactive escape room simulation in Python using the Factory Method design pattern.<br></p>
+      <a href="https://github.com/bismah-farooq/escape-room-" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Puppy Simulator (Python – State Pattern)</h3>
+      <p>Built a state-based simulation system modeling a puppy’s behavior using the State design pattern.</p>
+      <a href="https://github.com/bismah-farooq/puppy-simulator-" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>RPG Dungeon Simulation</h3>
+      <p>I developed a multi-process RPG dungeon simulation in C to explore core operating system concepts such as concurrency and inter-process communication. In this project, I created separate processes for different characters (Barbarian, Wizard, and Rogue) that interact through shared memory and signals.</p>
+      <a href="https://github.com/bismah-farooq/RPG-dungeon-simulation-" target="_blank">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>NASA L’SPACE Proposal Writing & Evaluation Experience</h3>
+    <p>• Collaborated on a multidisciplinary team to evaluate a NASA concept under professional mentorship.<br>
+       • Applied business knowledge and technical analysis to align proposals with NASA standards.</p>
+    <p>January 2023 - April 2026</p>
+  </div>
+
+  <div class="card">
+    <h3>School of Social Work, California State University, Long Beach - Student Assistant</h3>
+    <p>• Supported departmental operations using management information systems and Microsoft Office tools.</p>
+    <p>September 2024 - May 2025</p>
+  </div>
+
+  <div class="card">
+    <h3>Long Beach City College, California, USA - Computer Lab Assistant </h3>
+    <p>• Provided technical support and mentorship to students using computer systems and software tools.</p>
+    <p>August 2022 - December 2022</p>
+  </div>
+
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3> Google </h3>
+      <p>Cybersecurity Professional certificate</p>
+      <p> Earned in December 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>LinkedIn Learning </h3>
+      <p>RLearning Git and GitHub</p>
+      <p> Earned in September 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>Academic Course</h3>
+      <p>Advanced Python Programming including AI</p>
+      <p> Earned in May 2023</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: BismahFarooq@yahoo.com</p>
+  <p>Phone: (562)-476-8665</p>
+</section>
+
+<footer>
+  <p>© 2026 Bismah Farooq</p>
+</footer>
+
+<script>
+    function scrollToContact() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
