@@ -1,232 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bismah Farooq | Portfolio</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Portfolio of Bismah Farooq, a web developer specializing in responsive websites, user experience, and SEO optimization.">
-  <title>Bismah Farooq | Web Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-
-    body {
-      line-height: 1.6;
-      background: #f8fafc;
-      color: #1e293b;
-    }
-
-    header {
-      background: #e0f2fe;
-      padding: 15px 20px;
-      position: sticky;
-      top: 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: #0369a1;
-      text-decoration: none;
-      margin-left: 15px;
-      font-weight: 500;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .hero {
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: none;
-      background: #38bdf8;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin: 10px;
-      color: #0284c7;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      border: 1px solid #e2e8f0;
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #e0f2fe;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 2rem; }
-    }
-  </style>
+<style>
+body { margin:0; font-family:'Inter',sans-serif; background:#000; color:#fff; }
+header { position:fixed; width:100%; top:0; background:rgba(0,0,0,0.85); padding:15px 30px; z-index:1000; }
+nav { display:flex; justify-content:space-between; align-items:center; }
+nav a { color:#fff; margin-left:20px; text-decoration:none; }
+.hero {
+  height:100vh; display:flex; flex-direction:column; justify-content:center; padding:40px;
+  background:linear-gradient(to top, black, transparent), url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4');
+  background-size:cover; background-position:center;
+}
+.hero h1 { font-size:3rem; color:#e50914; margin-bottom:10px; }
+.hero p { font-size:1.15rem; max-width:650px; color:#e5e7eb; }
+.section { padding:70px 30px; max-width:1100px; margin:auto; }
+.row { display:flex; overflow-x:auto; gap:20px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+.card { min-width:280px; background:#111; padding:20px; border-radius:10px; transition:0.3s; border:1px solid #1f2937; }
+.card:hover { transform:scale(1.06); }
+h2 { color:#e50914; margin-bottom:16px; }
+.skill { background:#111; border:1px solid #1f2937; padding:12px 14px; border-radius:10px; }
+footer { text-align:center; padding:20px; color:gray; }
+</style>
 </head>
+
 <body>
 
 <header>
-  <nav>
-    <h2>BISMAH FAROOQ</h2>
-    <div>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+<nav>
+<h2 style="color:#e50914;">BISMAH</h2>
+<div>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact Me</a>
+</div>
+</nav>
 </header>
 
 <section class="hero">
-  <h1>Hi, I'm Bismah Farooq</h1>
-
-  <button onclick="scrollToContact()">Contact Me</button>
-
-  <div class="links">
-    <a href="https://github.com/bismah-farooq" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/bismah-farooq-1b6099351/" target="_blank">LinkedIn</a>
-  </div>
+<h1>Bismah Farooq</h1>
+<p>
+Computer Science student focused on building efficient systems, working with low-level programming, and solving real-world engineering problems using C/C++, Python, and Linux environments.
+</p>
 </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Detail-oriented Computer Science student and aspiring web developer with hands-on experience building responsive websites using HTML, CSS, and JavaScript. Skilled in creating clean, user-focused designs and optimizing web pages for performance and accessibility. Eager to contribute to real-world projects, continuously improve technical skills, and develop impactful web solutions.</p>
-</section>
+<div class="section" id="about">
+<h2>About Me</h2>
+<p>
+I am a Computer Science student at California State University, Long Beach with a strong academic record and hands-on technical experience. <br><br>
+I specialize in systems programming, where I work with processes, memory, and performance optimization at a low level. <br><br>
+I have built multi-process systems using C and Linux, applying concepts such as concurrency, synchronization, and inter-process communication. <br><br>
+My experience also includes machine learning research, where I developed neural networks and managed data pipelines in Python. <br><br>
+Additionally, I have worked on cybersecurity projects involving reverse engineering and encryption, strengthening my understanding of secure systems. <br><br>
+I am passionate about continuously improving my technical skills and building systems that are efficient, secure, and scalable.
+</p>
+</div>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="card">
-    <h3>California State University, Long Beach</h3>
-    <p>Bachelor's Degree in Computer Science (In Progress)</p>
-    <p>Expected Graduation: December 2026</p>
-  </div>
-</section>
+<div class="section" id="education">
+<h2>Education</h2>
+<div class="grid">
+<div class="card">
+<h3>California State University, Long Beach</h3>
+<p>B.S. Computer Science</p>
+<p>Expected: 2026</p>
+<p>GPA: 3.6 (Dean's List)</p>
+</div>
+</div>
+</div>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
+<div class="section" id="experience">
+<h2>Experience</h2>
+<div class="row">
+<div class="card">
+<h3>NASA L'SPACE – Data Analyst</h3>
+<p>
+• Conducted systems-level analysis and mission feasibility evaluation. <br>
+• Led technical documentation and coordinated team deliverables. <br>
+• Worked under NASA mentorship on real-world engineering problems.
+</p>
+</div>
 
-    <div class="card">
-      <h3>Escape Room Game (Python – Factory Design Pattern)</h3>
-      <p> Designed an interactive escape room simulation in Python using the Factory Method design pattern.<br></p>
-      <a href="https://github.com/bismah-farooq/escape-room-" target="_blank">View on GitHub</a>
-    </div>
+<div class="card">
+<h3>Machine Learning Research Assistant</h3>
+<p>
+• Built neural networks in Python and managed data pipelines. <br>
+• Optimized models using performance metrics and tuning. <br>
+• Collaborated with faculty on research interpretation.
+</p>
+</div>
 
-    <div class="card">
-      <h3>Puppy Simulator (Python – State Pattern)</h3>
-      <p>Built a state-based simulation system modeling a puppy’s behavior using the State design pattern.</p>
-      <a href="https://github.com/bismah-farooq/puppy-simulator-" target="_blank">View on GitHub</a>
-    </div>
+<div class="card">
+<h3>Student Assistant – CSULB</h3>
+<p>
+• Supported system operations and data workflows. <br>
+• Assisted with reporting and administrative processes. <br>
+• Improved efficiency through technical support.
+</p>
+</div>
 
-    <div class="card">
-      <h3>RPG Dungeon Simulation</h3>
-      <p>I developed a multi-process RPG dungeon simulation in C to explore core operating system concepts such as concurrency and inter-process communication. In this project, I created separate processes for different characters (Barbarian, Wizard, and Rogue) that interact through shared memory and signals.</p>
-      <a href="https://github.com/bismah-farooq/RPG-dungeon-simulation-" target="_blank">View on GitHub</a>
-    </div>
+<div class="card">
+<h3>Computer Lab Assistant – LBCC</h3>
+<p>
+• Provided technical support and troubleshooting. <br>
+• Assisted students with software and system usage. <br>
+• Maintained lab functionality and accessibility.
+</p>
+</div>
+</div>
+</div>
 
-  </div>
-</section>
+<div class="section" id="projects">
+<h2>Projects</h2>
+<div class="row">
+<div class="card">
+<h3>RPG Dungeon Simulation</h3>
+<p>
+• Designed a multi-process system in C using fork(), exec(), and signals. <br>
+• Implemented shared memory and POSIX semaphores for synchronization. <br>
+• Prevented race conditions and ensured process coordination.
+</p>
+</div>
 
-<section id="experience">
-  <h2>Experience</h2>
+<div class="card">
+<h3>Binary Hacking Lab</h3>
+<p>
+• Reverse engineered ELF binary using Ghidra. <br>
+• Located authentication logic and bypassed checks via patching. <br>
+• Applied secure coding and vulnerability analysis techniques.
+</p>
+</div>
 
-  <div class="card">
-    <h3>NASA L’SPACE Proposal Writing & Evaluation Experience</h3>
-    <p>• Collaborated on a multidisciplinary team to evaluate a NASA concept under professional mentorship.<br>
-       • Applied business knowledge and technical analysis to align proposals with NASA standards.</p>
-    <p>January 2023 - April 2026</p>
-  </div>
+<div class="card">
+<h3>PGP Encryption Lab</h3>
+<p>
+• Implemented RSA encryption using GnuPG. <br>
+• Managed keys, encrypted messages, and verified signatures. <br>
+• Practiced secure communication protocols.
+</p>
+</div>
+</div>
+</div>
 
-  <div class="card">
-    <h3>School of Social Work, California State University, Long Beach - Student Assistant</h3>
-    <p>• Supported departmental operations using management information systems and Microsoft Office tools.</p>
-    <p>September 2024 - May 2025</p>
-  </div>
+<div class="section" id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="skill">C</div>
+<div class="skill">C++</div>
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Haskell</div>
+<div class="skill">Prolog</div>
+<div class="skill">SQL</div>
+<div class="skill">MIPS Assembly</div>
+<div class="skill">R (ggplot2, RShiny)</div>
+<div class="skill">Linux</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Bash</div>
+<div class="skill">Jupyter Notebook</div>
+<div class="skill">Tableau</div>
+<div class="skill">Data Cleaning</div>
+<div class="skill">Dashboard Design</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Neural Networks</div>
+<div class="skill">Operating Systems</div>
+<div class="skill">Concurrency</div>
+<div class="skill">IPC</div>
+<div class="skill">Cybersecurity</div>
+<div class="skill">Reverse Engineering</div>
+<div class="skill">Cryptography</div>
+<div class="skill">Network Protocols (TCP/IP, HTTP)</div>
+<div class="skill">Firewalls</div>
+<div class="skill">Cloud Security</div>
+<div class="skill">SIEM Tools</div>
+<div class="skill">Vulnerability Assessment</div>
+<div class="skill">Risk Management</div>
+</div>
+</div>
 
-  <div class="card">
-    <h3>Long Beach City College, California, USA - Computer Lab Assistant </h3>
-    <p>• Provided technical support and mentorship to students using computer systems and software tools.</p>
-    <p>August 2022 - December 2022</p>
-  </div>
-
-</section>
-
-<section id="certificates">
-  <h2>Certificates</h2>
-  <div class="projects">
-
-    <div class="card">
-      <h3> Google </h3>
-      <p>Cybersecurity Professional certificate</p>
-      <p> Earned in December 2025</p>
-    </div>
-
-    <div class="card">
-      <h3>LinkedIn Learning </h3>
-      <p>RLearning Git and GitHub</p>
-      <p> Earned in September 2025</p>
-    </div>
-
-    <div class="card">
-      <h3>Academic Course</h3>
-      <p>Advanced Python Programming including AI</p>
-      <p> Earned in May 2023</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: BismahFarooq@yahoo.com</p>
-  <p>Phone: (562)-476-8665</p>
-</section>
+<div class="section" id="contact">
+<h2>Contact</h2>
+<p>Email: BismahFarooq@yahoo.com</p>
+<p>Phone: (562)-476-8665</p>
+</div>
 
 <footer>
-  <p>© 2026 Bismah Farooq</p>
+<p>© 2026 Bismah Farooq</p>
 </footer>
-
-<script>
-    function scrollToContact() {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
 
 </body>
 </html>
